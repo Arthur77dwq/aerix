@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Primary Meta Tags -->
+  <title>Aerix Blog — Insights on B2B Lead Generation & Sales Growth</title>
+  <meta name="description" content="Read expert insights, sales strategies, and AI-driven tips from the Aerix team. Stay ahead with the latest in B2B lead generation and business growth.">
+  <meta name="keywords" content="Aerix blog, B2B sales, lead generation tips, AI sales strategies, prospecting, marketing automation, Aerix insights">
+  <link rel="canonical" href="https://aerix.app/blogs">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Aerix">
+  <meta name="application-name" content="Aerix">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="Aerix - B2B Lead Generation Platform">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aerix Blog — Insights on B2B Lead Generation & Sales Growth">
+  <meta property="og:description" content="Explore Aerix's latest posts on AI, B2B prospecting, and sales automation. Learn how to generate better leads and close more deals.">
+  <meta property="og:url" content="https://aerix.app/blogs">
+  <meta property="og:image" content="https://aerix.app/images/aerix-og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AerixApp">
+  <meta name="twitter:creator" content="@AerixApp">
+  <meta name="twitter:title" content="Aerix Blog — Insights on B2B Lead Generation & Sales Growth">
+  <meta name="twitter:description" content="Stay informed with expert sales and lead generation advice from the Aerix team.">
+  <meta name="twitter:image" content="https://aerix.app/images/aerix-og-image.jpg">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aerix.app/blogs"
+    },
+    "name": "Aerix Blog",
+    "url": "https://aerix.app/blogs",
+    "description": "Expert insights and AI-powered sales strategies from Aerix — the B2B lead generation platform for sales teams.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aerix",
+      "url": "https://aerix.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aerix.app/favicon.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://twitter.com/aerixapp",
+        "https://www.linkedin.com/company/aerixapp",
+        "https://www.facebook.com/aerixapp",
+        "https://www.instagram.com/aerixapp",
+        "https://github.com/Arthur77dwq/aerixapp"
+      ]
+    }
+  }
+  </script>
+  <style>
+    /* Blog listing styles */
+    .blog-listing {
+      padding: 120px 0 80px !important;
+      background: var(--bg-darker) !important;
+    }
+
+    .blog-listing h1 {
+      text-align: center !important;
+      font-size: 3rem !important;
+      margin-bottom: 3rem !important;
+      background: linear-gradient(135deg, #ff9ac8, #ffe066, #6be79f, #ffc966, #5fafff) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+
+    .blog-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
+      gap: 2rem !important;
+      max-width: 1200px !important;
+      margin: 0 auto !important;
+      padding: 0 1.5rem !important;
+    }
+
+    .blog-card {
+      background: var(--card-bg) !important;
+      border-radius: 16px !important;
+      overflow: hidden !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+      border: 1px solid var(--border-color) !important;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px) !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .blog-card-image {
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover !important;
+    }
+
+    .blog-card-content {
+      padding: 1.5rem !important;
+    }
+
+    .blog-card h3 {
+      font-size: 1.5rem !important;
+      margin-bottom: 0.75rem !important;
+      color: var(--text-primary) !important;
+    }
+
+    .blog-card p {
+      color: var(--text-secondary) !important;
+      margin-bottom: 1.25rem !important;
+      line-height: 1.6 !important;
+    }
+
+    .blog-meta {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1rem !important;
+      color: var(--text-tertiary) !important;
+      font-size: 0.875rem !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .read-more {
+      color: var(--blue-primary) !important;
+      font-weight: 500 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .read-more:hover {
+      color: var(--blue-hover) !important;
+    }
+    
+    .blog-post-link {
+      color: var(--text-primary) !important;
+      text-decoration: none !important;
+      transition: color 0.2s ease !important;
+    }
+    
+    .blog-post-link:hover {
+      color: var(--blue-primary) !important;
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 1rem !important;
+      }
+      
+      .blog-listing h1 {
+        font-size: 2.25rem !important;
+      }
+    } 
+
+    .blog-content p {
+      margin-bottom: 1.5rem !important;
+      font-size: 1.1rem !important;
+      color: var(--text-secondary) !important;
+    }
+
+    .blog-content ul, .blog-content ol {
+      margin: 1.5rem 0 !important;
+      padding-left: 2rem !important;
+    }
+
+    .blog-content li {
+      margin-bottom: 0.75rem !important;
+      color: var(--text-secondary) !important;
+    }
+
+    .blog-image {
+      width: 100% !important;
+      max-height: 500px !important;
+      object-fit: cover !important;
+      border-radius: 12px !important;
+      margin: 2rem 0 !important;
+    }
+
+    .blog-navigation {
+      display: flex !important;
+      justify-content: space-between !important;
+      margin-top: 4rem !important;
+      padding-top: 2rem !important;
+      border-top: 1px solid var(--border-color) !important;
+    }
+
+    .blog-navigation a {
+      color: var(--blue-primary) !important;
+      text-decoration: none !important;
+      font-weight: 500 !important;
+      transition: opacity 0.2s !important;
+    }
+
+    .blog-navigation a:hover {
+      opacity: 0.8 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a href="index.html">
+  <img class="logo-img" src="images/AerixLogo.png" alt="Aerix logo" />
+</a>
+
+<style>
+  .logo-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+
+  .logo-img:hover {
+    transform: scale(1.25);
+  }
+</style>
+      </div>
+  
+      <!-- Mobile Sidebar -->
+      <aside class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+        <nav class="mobile-nav">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="about-us.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="policy.html">Policy</a>
+        </nav>
+      </aside>
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="about-us.html">About</a>
+          <a href="blogs.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="policy.html">Policy</a>
+        </nav>
+        <div class="actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button class="btn btn-ghost" id="openAuthFromHeader">Login</button>
+          <button class="btn" id="openAuthFromHeaderCta">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+  <main class="blog-listing">
+    <div class="container">
+      <h1>Latest Insights</h1>
+      
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="B2B Lead Qualification" class="blog-card-image">
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span>June 15, 2025</span>
+              <span>•</span>
+              <span>8 min read</span>
+            </div>
+            <h3><a href="blog-post.html" class="blog-post-link">The 9 Fatal Mistakes Killing Your B2B Lead Qualification Process</a></h3>
+            <p>Discover the most common pitfalls in B2B lead qualification and learn actionable strategies to transform your sales pipeline and boost conversions.</p>
+            <a href="blog-post.html" class="read-more">Read more <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 (Coming Soon) -->
+        <article class="blog-card">
+          <img src="https://www.shutterstock.com/image-photo/lead-generation-concept-analysis-financial-600nw-2488413197.jpg" alt="AI in Sales" class="blog-card-image">
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span>Coming Soon</span>
+              <span>•</span>
+              <span>6 min read</span>
+            </div>
+            <h3>How AI is Revolutionizing B2B Sales in 2025</h3>
+            <p>Explore the latest AI technologies transforming the B2B sales landscape and how forward-thinking companies are leveraging them for unprecedented growth.</p>
+            <a href="#" class="read-more">Coming Soon</a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 (Coming Soon) -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sales Automation" class="blog-card-image">
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span>Coming Soon</span>
+              <span>•</span>
+              <span>7 min read</span>
+            </div>
+            <h3>The Ultimate Guide to Sales Automation in 2025</h3>
+            <p>Learn how to implement sales automation that actually works, with practical tips and tools to streamline your sales process and close more deals.</p>
+            <a href="#" class="read-more">Coming Soon</a>
+          </div>
+        </article>
+      </div>
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    if (mobileMenuButton && mobileNav) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenuButton.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      });
+    }
+
+    // Auth modal functionality
+    const authModal = document.getElementById('authModal');
+    const openAuthButtons = document.querySelectorAll('.open-auth');
+    const closeAuthModal = document.getElementById('closeAuthModal');
+    const authTabs = document.querySelectorAll('.auth-tab');
+    const authForms = document.querySelectorAll('.auth-form');
+    
+    function openAuthModal() {
+      authModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+    
+    function closeAuthModalFunc() {
+      authModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+    
+    // Open modal when clicking auth buttons
+    openAuthButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        openAuthModal();
+      });
+    });
+    
+    // Close modal when clicking close button or outside modal
+    if (closeAuthModal) {
+      closeAuthModal.addEventListener('click', closeAuthModalFunc);
+    }
+    
+    authModal.addEventListener('click', (e) => {
+      if (e.target === authModal) {
+        closeAuthModalFunc();
+      }
+    });
+    
+    // Tab switching
+    function switchTab(tabName) {
+      authTabs.forEach(tab => {
+        if (tab.dataset.tab === tabName) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      
+      authForms.forEach(form => {
+        if (form.id === `${tabName}Form`) {
+          form.classList.add('active');
+        } else {
+          form.classList.remove('active');
+        }
+      });
+    }
+
+    // Tab click handlers
+    authTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabName = tab.dataset.tab;
+        switchTab(tabName);
+      });
+    });
+
+    // Form submission
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+    
+    if (loginForm) {
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Add your login logic here
+        console.log('Login form submitted');
+      });
+    }
+    
+    if (signupForm) {
+      signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Add your signup logic here
+        console.log('Signup form submitted');
+      });
+    }
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    }
+    
+    if (themeToggle) {
+      themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  </script>
+  <script src="js/main.js"></script>
+    <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <div class="logo-dot" aria-hidden="true"></div>
+        <span class="logo-text">Aerix - Build By Arthur</span>
+      </div>
+      <div class="copy"><span id="year">2026</span> Aerix Pty Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Primary Meta Tags -->
+  <title>About Aerix — Our Mission to Power B2B Sales Teams</title>
+  <meta name="description" content="Learn about Aerix, the AI-powered B2B lead generation platform helping sales teams find and connect with their ideal customers. Discover our mission and vision.">
+  <meta name="keywords" content="about Aerix, B2B lead generation, sales technology, company mission, Aerix team, AI prospecting, SaaS for sales">
+  <link rel="canonical" href="https://aerix.app/about-us">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <meta name="apple-mobile-web-app-title" content="Aerix">
+  <meta name="application-name" content="Aerix">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="Aerix - B2B Lead Generation Platform">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Aerix — Our Mission to Power B2B Sales Teams">
+  <meta property="og:description" content="Discover Aerix’s mission to help sales teams find and connect with their ideal customers through AI-powered B2B lead generation.">
+  <meta property="og:url" content="https://aerix.app/about-us">
+  <meta property="og:image" content="https://aerix.app/images/aerix-og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AerixApp">
+  <meta name="twitter:creator" content="@AerixApp">
+  <meta name="twitter:title" content="About Aerix — Our Mission to Power B2B Sales Teams">
+  <meta name="twitter:description" content="Learn more about Aerix and how we’re revolutionizing B2B lead generation for sales teams.">
+  <meta name="twitter:image" content="https://aerix.app/images/aerix-og-image.jpg">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://aerix.app/about-us"
+    },
+    "name": "About Aerix — Our Mission to Power B2B Sales Teams",
+    "description": "Learn about Aerix, the AI-powered B2B lead generation platform helping sales teams find and connect with their ideal customers.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aerix",
+      "url": "https://aerix.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aerix.app/favicon.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://twitter.com/aerixapp",
+        "https://www.linkedin.com/company/aerixapp",
+        "https://www.facebook.com/aerixapp",
+        "https://www.instagram.com/aerixapp",
+        "https://github.com/Arthur77dwq/aerixapp"
+      ]
+    }
+  }
+  </script>
+  <style>
+    /* Match button styles from index.html */
+    #openAuthFromHeaderCta {
+      background: var(--blue-primary);
+      color: white;
+      border: 1px solid var(--blue-primary);
+    }
+    
+    /* Custom styles for About page */
+    .about-hero {
+      padding: 240px 0 100px !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.03) 0%, transparent 20%), 
+                  radial-gradient(circle at 80% 30%, rgba(66, 153, 225, 0.05) 0%, transparent 30%);
+      z-index: -1;
+    }
+    
+    .about-heading {
+      font-size: 4rem !important;
+      font-weight: 800 !important;
+      line-height: 1.1 !important;
+      margin-bottom: 24px !important;
+      background: linear-gradient(135deg, #ff7eb3, #FFD700, #43e97b, #ffb347, #2575fc) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+    
+    .about-subhead {
+      font-size: 1.25rem !important;
+      color: var(--text-secondary) !important;
+      max-width: 700px !important;
+      margin: 0 auto 60px !important;
+      line-height: 1.7 !important;
+    }
+    
+    .section-title {
+      font-size: 2.5rem !important;
+      font-weight: 700 !important;
+      margin-bottom: 40px !important;
+      text-align: center !important;
+      position: relative !important;
+      display: inline-block !important;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff7eb3, #2575fc);
+      border-radius: 2px;
+    }
+    
+    .values-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+      gap: 30px !important;
+      margin: 60px 0 !important;
+    }
+    
+    .value-card {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 16px !important;
+      padding: 40px 30px !important;
+      transition: all 0.3s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-5px) !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+      border-color: rgba(255,255,255,0.1) !important;
+    }
+    
+    .value-icon {
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 16px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin-bottom: 24px !important;
+      font-size: 24px !important;
+      background: var(--surface-light) !important;
+      color: var(--text-primary) !important;
+    }
+    
+    .value-title {
+      font-size: 1.5rem !important;
+      font-weight: 700 !important;
+      margin-bottom: 16px !important;
+      color: var(--text-primary) !important;
+    }
+    
+    .value-desc {
+      color: var(--text-secondary) !important;
+      line-height: 1.7 !important;
+    }
+    
+    .team-section {
+      padding: 100px 0 !important;
+      background: var(--bg-darker) !important;
+    }
+    
+    .team-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+      gap: 30px !important;
+      margin-top: 60px !important;
+    }
+    
+    .team-member {
+      text-align: center !important;
+    }
+    
+    .member-avatar {
+      width: 160px !important;
+      height: 160px !important;
+      border-radius: 50% !important;
+      margin: 0 auto 20px !important;
+      border: 4px solid var(--border) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .team-member:hover .member-avatar {
+      transform: scale(1.05) !important;
+      border-color: var(--blue-primary) !important;
+    }
+    
+    .member-name {
+      font-size: 1.25rem !important;
+      font-weight: 600 !important;
+      margin: 16px 0 4px !important;
+    }
+    
+    .member-role {
+      color: var(--blue-primary) !important;
+      font-weight: 500 !important;
+      margin-bottom: 16px !important;
+      display: block !important;
+    }
+    
+    .member-bio {
+      color: var(--text-secondary) !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+    }
+    
+    .cta-section {
+      padding: 100px 0 !important;
+      text-align: center !important;
+      background: linear-gradient(135deg, rgba(5,5,5,0.95), rgba(0,0,0,0.98)) !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    
+    .cta-content {
+      max-width: 700px !important;
+      margin: 0 auto !important;
+      position: relative !important;
+      z-index: 2 !important;
+    }
+    
+    .cta-title {
+      font-size: 2.5rem !important;
+      font-weight: 700 !important;
+      margin-bottom: 20px !important;
+      line-height: 1.3 !important;
+    }
+    
+    .cta-desc {
+      font-size: 1.1rem !important;
+      color: var(--text-secondary) !important;
+      margin-bottom: 40px !important;
+      line-height: 1.7 !important;
+    }
+    
+    @media (max-width: 768px) {
+      .about-heading {
+        font-size: 2.5rem !important;
+      }
+      
+      .about-subhead {
+        font-size: 1.1rem !important;
+      }
+      
+      .section-title {
+        font-size: 2rem !important;
+      }
+      
+      .values-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a href="index.html">
+  <img class="logo-img" src="images/AerixLogo.png" alt="Aerix logo" />
+</a>
+
+<style>
+  .logo-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+
+  .logo-img:hover {
+    transform: scale(1.25);
+  }
+</style>
+      </div>
+  
+      <!-- Mobile Sidebar -->
+      <aside class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-sidebar" id="closeSidebar">&times;</button>
+        <nav class="mobile-nav">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="about-us.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="policy.html">Policy</a>
+        </nav>
+      </aside>
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="about-us.html">About</a>
+          <a href="blogs.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="policy.html">Policy</a>
+        </nav>
+        <div class="actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <button class="btn btn-ghost" id="openAuthFromHeader">Login</button>
+          <button class="btn" id="openAuthFromHeaderCta">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="container" style="text-align: center;">
+        <h1 class="about-heading" style="font-weight: 500 !important;">Building the future of B2B lead generation</h1>
+        <p class="about-subhead">At Aerix, we're on a mission to help sales teams find and connect with their ideal customers through powerful, AI-driven lead generation tools that deliver real results.</p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="container" style="padding: 80px 0;">
+      <h2 class="section-title">Our Story</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 30px;">
+          Founded in 2023, Aerix was born from a simple idea: sales teams spend too much time searching for leads and not enough time selling. Our team of data scientists, engineers, and sales experts came together to build a platform that automates the most time-consuming parts of prospecting.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+          Today, Aerix powers thousands of sales teams worldwide, helping them find better leads, close more deals, and grow their businesses faster than ever before.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section style="background: var(--bg-darker); padding: 80px 0;">
+      <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="value-title">Customer Success</h3>
+          <p class="value-desc">We measure our success by the success of our customers. Your growth is our top priority, and we're committed to providing the tools and support you need to achieve your goals.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="value-title">Innovation</h3>
+          <p class="value-desc">We're constantly pushing the boundaries of what's possible in lead generation, using cutting-edge AI and machine learning to deliver better results for our customers.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="value-title">Integrity</h3>
+          <p class="value-desc">We believe in doing business the right way. That means being transparent, ethical, and respectful in everything we do, from data privacy to customer support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-title" style="text-align: center;">Meet the Team</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 60px; color: var(--text-secondary);">
+          We're a diverse team of passionate individuals united by our mission to revolutionize B2B sales.
+        </p>
+        
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="images/syed.png" alt="Syed Imran" class="member-avatar">
+            <h3 class="member-name">Syed Imran</h3>
+            <span style="color: rgba(255, 255, 255, 0.656) !important;" class="member-role">SEO & Content</span>
+            <p class="member-bio">With 2+ years of experience in SEO and a passion for building products that solve real problems.</p>
+          </div>
+          
+          <div class="team-member">
+            <img src="images/placeholder.jpeg" alt="Sarah Chen" class="member-avatar">
+            <h3 class="member-name">Arthur Rizk</h3>
+            <span style="color: rgba(255, 255, 255, 0.656) !important;" class="member-role">CEO</span>
+            <p class="member-bio">Young tech founder building next-gen SaaS platforms that blend automation, AI, and smart data systems to help businesses grow faster</p>
+          </div>
+          
+          <div class="team-member">
+            <img src="images/placeholder.jpeg" alt="Michael Rodriguez" class="member-avatar">
+            <h3 class="member-name">James</h3>
+            <span style="color: rgba(255, 255, 255, 0.656) !important;" class="member-role">Backend Developer</span>
+            <p class="member-bio">Backend developer focused on building reliable, scalable systems that power seamless user experiences behind the scenes.</p>
+          </div>
+          
+          <div class="team-member">
+            <img src="images/noah.jpeg" alt="Priya Patel" class="member-avatar">
+            <h3 class="member-name">Noah Reyes</h3>
+            <span style="color: rgba(255, 255, 255, 0.656) !important;" class="member-role">Head of Design</span>
+            <p class="member-bio">A results-driven designer passionate about turning user behavior data into powerful, high-converting design systems that look great and perform even better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <div class="logo-dot" aria-hidden="true"></div>
+        <span class="logo-text">Aerix - Build By Arthur</span>
+      </div>
+      <div class="copy"><span id="year">2026</span> Aerix Pty Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div class="modal" id="authModal" aria-hidden="true" role="dialog" aria-labelledby="authTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <h3 id="authTitle">Create account or log in</h3>
+      <div class="tabs" role="tablist" aria-label="Authentication tabs">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="signup">Sign up</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="login">Log in</button>
+      </div>
+      <div class="tab-panels">
+        <form class="panel active" id="signupPanel" aria-label="Sign up form">
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button class="btn btn-block" type="submit">Create account</button>
+        </form>
+        <form class="panel" id="loginPanel" aria-label="Login form">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button class="btn btn-block" type="submit">Log in</button>
+        </form>
+      </div>
+      <p class="fine-print">By continuing, you agree to our <a href="terms.html" style="color: var(--blue-primary);">Terms</a> and <a href="policy.html" style="color: var(--blue-primary);">Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    html.setAttribute('data-theme', savedTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    mobileMenuButton.addEventListener('click', () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileNav.setAttribute('aria-hidden', isExpanded);
+      document.body.classList.toggle('nav-open');
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileNav.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('nav-open');
+      }
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('nav-open');
+      });
+    });
+    
+    // Auth modal functionality
+    const authModal = document.getElementById('authModal');
+    const openAuthButtons = document.querySelectorAll('.open-auth, #openAuthFromHeader, #openAuthFromHeaderCta');
+    const closeAuthButton = document.querySelector('.modal-close');
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.panel');
+    
+    // Open auth modal
+    openAuthButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        authModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Close auth modal
+    function closeAuthModal() {
+      authModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    
+    closeAuthButton.addEventListener('click', closeAuthModal);
+    modalBackdrop.addEventListener('click', closeAuthModal);
+    
+    // Tab switching
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabName = tab.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+        tab.setAttribute('aria-selected', 'true');
+        
+        // Show corresponding panel
+        panels.forEach(panel => {
+          panel.classList.remove('active');
+          if (panel.id === `${tabName}Panel`) {
+            panel.classList.add('active');
+          }
+        });
+      });
+    });
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && authModal.getAttribute('aria-hidden') === 'false') {
+        closeAuthModal();
+      }
+    });
+  </script>
+</body>
+</html>
