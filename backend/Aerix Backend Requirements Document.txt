@@ -1,0 +1,120 @@
+﻿Aerix Backend Requirements Document
+Project: Aerix - AI-Powered B2B Lead Generation Tool
+Frontend: Built and will be provided (https://aerix.app)
+Backend Developer: Shreyanshu Dekate
+________________
+
+
+* 1. Project Overview
+Aerix is a tool that finds and filters B2B leads in seconds. The backend will handle fetching company data, filtering it, storing results, generating reports, and integrating fully with the frontend.
+Key Goals:
+* Fetch company/lead data using OpenCorporates API
+
+* Store and manage leads per user
+
+* Connect and serve data seamlessly to the frontend
+
+* Generate reports (CSV / PDF)
+
+________________
+
+
+   * 2. Backend Features
+   * 2.1 User Management
+   * Signup/Login (firebase)
+
+   * User session management
+
+      * 2.2 Lead Search
+      * Accepts filters from frontend: company name, industry, jurisdiction, incorporation date, status, officers, etc.
+
+      * Queries OpenCorporates API for matching companies:
+
+         * Example endpoint: /v0.4/companies/search?q={query}&jurisdiction_code={code}
+
+            * Returns JSON data to frontend
+
+               * 2.3 Lead Storage
+               * Save searched leads in database per user
+
+               * Database: PostgreSQL / Supabase
+
+                  * 2.4 Report Generation
+                  * Generate downloadable CSV or PDF of filtered leads
+
+                     * 2.5 Frontend Integration
+                     * Integrate backend endpoints with the frontend UI
+
+                     * Ensure all frontend buttons, forms, filters, and reports work using backend APIs
+
+                     * Frontend files will be provided when ready
+
+________________
+
+
+                        * 3. Tech Stack
+                        * Backend: Node.js + Express
+
+                        * Database: PostgreSQL or Supabase for free
+
+                        * Hosting: Render / Railway
+
+                        * External API: OpenCorporates API
+
+________________
+
+
+                           * 4. Key API Endpoints
+Method
+	Endpoint
+	Description
+	POST
+	/api/auth/signup
+	Register new user
+	POST
+	/api/auth/login
+	Login user
+	POST
+	/api/leads/search
+	Fetch leads from OpenCorporates based on filters
+	GET
+	/api/leads/:id
+	Return specific lead info
+	POST
+	/api/report
+	Generate CSV/PDF of leads
+	GET
+	/api/status
+	Check server health
+	________________
+
+
+                           * 5. Frontend Integration Notes
+                           * Backend must be ready to accept frontend requests once files are provided
+
+                           * Enable CORS for frontend connection
+
+                           * All lead-fetching, filtering, and report generation should work directly from the frontend UI
+
+                           * Do not start integrating until frontend files are provided
+
+________________
+
+
+                              * 6. Future Enhancements
+                              * Paid plans (Stripe integration) after 1 month we will make our saas paid
+
+                              * AI scoring to rank best leads
+
+                              * Multi-source lead enrichment (Clearbit, Hunter.io)
+
+________________
+
+
+                                 * 7. Important 
+Backend must use OpenCorporates API as the primary data source
+                                 1. Frontend integration is mandatory for project completion
+
+                                 2. Backend must be fully functional before SEO and marketing can push live
+
+                                 3. Security and performance best practices are required
